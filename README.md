@@ -3,6 +3,8 @@ A GitHub Action to generate a podcast feed from a YAML file. YAML is much easier
 
 You can use this project to update a podcast feed located within this repository in the **./output/podcast.xml** file or update other podcast feeds in other repositories. When you use another repo to run the project, it will find the _action.yml_ file, understand that it needs to use the Docker image, run the _Dockerfile_ to generate the server then run the _entrypoint_, which will set up git, run _feed.py_ and push the code to the server and in so doing generate your feed.
 
+You can find a sample podcast at the homepage or **index.html** and a sample _XML formatted_ podcast feed by navigating to [https://Kmtengo.github.io/podcast-feed-generator/output/podcast.xml](https://Kmtengo.github.io/podcast-feed-generator/output/podcast.xml)
+
 # Usage
 ## Turn on GitHub Pages
 In your repository got to **Settings** > **Pages** and select the **main** branch as the source.This will create a link to your page and give all of the content in the main branch a URL. Note the URL for the next step.
